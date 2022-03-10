@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aryan Sood N01393003 </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_string">Home</string>
+    <string name="draw">Draw</string>
+    <string name="call">Call</string>
+    <string name="animate">Animate</string>
+</resources>
