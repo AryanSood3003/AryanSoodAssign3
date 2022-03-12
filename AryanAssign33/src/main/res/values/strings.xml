@@ -15,4 +15,5 @@
     <string name="Description">Rotation of Mercury Around Sun</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="inputted_data">Inputted Data</string>
 </resources>

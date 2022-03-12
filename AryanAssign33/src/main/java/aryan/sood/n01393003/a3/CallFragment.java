@@ -91,13 +91,13 @@ public class CallFragment extends Fragment {
         ConstraintLayout text = view.findViewById(R.id.constraintLayout);
         Snackbar snackbar;
         if (requestCode == REQUEST_PHONE_CALL && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            snackbar = Snackbar
-                    .make(text, R.string.pg, Snackbar.LENGTH_LONG);
+          call();
         } else  {
             snackbar = Snackbar
                     .make(text, R.string.pd, Snackbar.LENGTH_LONG);
+            snackbar.show();
         }
-        snackbar.show();
+
     }
 
 }
