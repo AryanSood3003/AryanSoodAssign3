@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AryanAssign3"
-include ':app'
+include ':AryanAssign33'
