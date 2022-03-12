@@ -10,4 +10,9 @@
     <string name="contact_number">1234567890</string>
     <string name="pg">Permission Granted</string>
     <string name="pd">Permission Denied</string>
+    <string name="sood">Sood</string>
+    <string name="Aryan">Aryan</string>
+    <string name="Description">Rotation of Mars Around Sun</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
 </resources>
