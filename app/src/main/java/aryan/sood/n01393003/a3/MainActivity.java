@@ -1,6 +1,8 @@
 package aryan.sood.n01393003.a3;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements TabLayoutMediator
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_home);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_brush);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_call);
-       tabLayout.getTabAt(3).setIcon(R.drawable.ic_play);
+        tabLayout.getTabAt(3).setIcon(R.drawable.ic_play);
     }
 
     public void setViewPagerAdapter() {
@@ -57,4 +59,5 @@ public class MainActivity extends AppCompatActivity implements TabLayoutMediator
     public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
         tab.setText(titles.get(position));
     }
+
 }
