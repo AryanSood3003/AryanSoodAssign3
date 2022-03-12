@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity implements TabLayoutMediator
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         viewPager2 = findViewById(R.id.viewPager2);
         tabLayout = findViewById(R.id.tabLayout);
         setViewPagerAdapter();
