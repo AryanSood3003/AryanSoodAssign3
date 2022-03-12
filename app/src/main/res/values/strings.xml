@@ -6,4 +6,8 @@
     <string name="call">Call</string>
     <string name="animate">Animate</string>
     <string name="enter_password">Enter Password</string>
+    <string name="assignment_3"><strike> Assignment 3 </strike> </string>
+    <string name="contact_number">1234567890</string>
+    <string name="pg">Permission Granted</string>
+    <string name="pd">Permission Denied</string>
 </resources>
