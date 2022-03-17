@@ -30,7 +30,7 @@
     <string name="clear">Clear</string>
     <string name="update">Update</string>
     <string name="_4">4</string>
-    <string name="changes">Click Update to appply changes</string>
+    <string name="changes">Click Update to apply changes</string>
     <string-array name="size">
         <item>@string/_1</item>
         <item>@string/_2</item>

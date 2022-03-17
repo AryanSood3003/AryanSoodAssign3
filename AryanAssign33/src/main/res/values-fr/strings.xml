@@ -1,0 +1,38 @@
+<!--Aryan Sood-->
+<!--N01393003-->
+<!--CENG 258 RNA-->
+<resources>
+    <string name="home_string">Maison</string>
+    <string name="draw">Dessiner</string>
+    <string name="call">Appel</string>
+    <string name="animate">Animer</string>
+    <string name="enter_password">Entrer le mot de passe</string>
+    <string name="assignment_3"><strike> Devoir 3</strike> </string>
+    <string name="contact_number">1234567890</string>
+    <string name="pg">Permission accordée</string>
+    <string name="pd">Permission refusée</string>
+    <string name="Description">Rotation de Mercure autour du Soleil</string>
+    <string name="start">Démarrer</string>
+    <string name="stop">Arrêter</string>
+    <string name="inputted_data">Données saisies</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="extemsg">Êtes-vous sûr de vouloir quitter?</string>
+    <string name="blue">Bleu</string>
+    <string name="red">rouge</string>
+    <string name="gray">Gris</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="clear">Dégager</string>
+    <string name="update">Mettre à jour</string>
+    <string name="_4">4</string>
+    <string name="changes">Cliquez sur Mettre à jour pour appliquer les modifications</string>
+    <string-array name="color">
+        <item>Le noir</item>
+        <item>Bleu</item>
+        <item>gris</item>
+        <item>rouge</item>
+    </string-array>
+
+</resources>
