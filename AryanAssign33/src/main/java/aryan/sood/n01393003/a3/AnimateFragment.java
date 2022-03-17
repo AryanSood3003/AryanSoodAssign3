@@ -16,11 +16,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link AnimateFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class AnimateFragment extends Fragment {
     private View view;
     private ImageView imageView;
@@ -81,13 +77,11 @@ public class AnimateFragment extends Fragment {
 class MyAnimationListener implements Animation.AnimationListener{
 
     public void onAnimationStart(Animation animation){
-
     }
 
     @Override
     public void onAnimationEnd(Animation animation) {
     }
-
     @Override
     public void onAnimationRepeat(Animation animation) {
 

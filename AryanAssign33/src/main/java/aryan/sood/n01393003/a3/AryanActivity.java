@@ -4,11 +4,13 @@
 
 package aryan.sood.n01393003.a3;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
@@ -18,7 +20,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements TabLayoutMediator.TabConfigurationStrategy {
+public class AryanActivity extends AppCompatActivity implements TabLayoutMediator.TabConfigurationStrategy {
     private ViewPager2 viewPager2;
     private TabLayout tabLayout;
     ArrayList<String> titles;
@@ -27,8 +29,8 @@ public class MainActivity extends AppCompatActivity implements TabLayoutMediator
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        viewPager2 = findViewById(R.id.viewPager2);
-        tabLayout = findViewById(R.id.tabLayout);
+        viewPager2 = findViewById(R.id.Aryan_viewPager2);
+        tabLayout = findViewById(R.id.Aryan_tabLayout);
         setViewPagerAdapter();
 
         titles = new ArrayList<String>();
@@ -56,11 +58,31 @@ public class MainActivity extends AppCompatActivity implements TabLayoutMediator
         fragmentList.add(new AnimateFragment());
         viewPager2Adapter.setData(fragmentList);
         viewPager2.setAdapter(viewPager2Adapter);
+        viewPager2.setUserInputEnabled(false);
     }
 
     @Override
     public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
         tab.setText(titles.get(position));
     }
+    public void onBackPressed() {
 
+        AlertDialog.Builder builder = new AlertDialog.Builder(AryanActivity.this);
+        builder.setTitle(R.string.app_name);
+        builder.setMessage(R.string.extemsg)
+                .setCancelable(false)
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finishAffinity();
+                        System.exit(0);
+                    }
+                }
+                )
+                .setIcon(R.drawable.alert)
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                    }
+                });
+        builder.show();
+    }
 }

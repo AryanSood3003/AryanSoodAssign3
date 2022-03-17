@@ -1,6 +1,8 @@
+<!--Aryan Sood-->
+<!--N01393003-->
+<!--CENG 258 RNA-->
 <resources>
     <string name="app_name">Aryan Sood N01393003 </string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="home_string">Home</string>
     <string name="draw">Draw</string>
     <string name="call">Call</string>
@@ -16,4 +18,29 @@
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="inputted_data">Inputted Data</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="extemsg">Are you sure you want to exit?</string>
+    <string name="blue">Blue</string>
+    <string name="red">Red</string>
+    <string name="gray">Grey</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="clear">Clear</string>
+    <string name="update">Update</string>
+    <string name="_4">4</string>
+    <string name="changes">Click Update to appply changes</string>
+    <string-array name="size">
+        <item>@string/_1</item>
+        <item>@string/_2</item>
+        <item>@string/_3</item>
+        <item>@string/_4</item>
+    </string-array>
+    <string-array name="color">
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Gray</item>
+        <item>Red</item>
+    </string-array>
 </resources>
