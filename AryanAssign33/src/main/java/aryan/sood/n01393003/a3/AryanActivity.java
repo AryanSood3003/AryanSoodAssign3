@@ -6,8 +6,6 @@ package aryan.sood.n01393003.a3;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -52,7 +50,7 @@ public class AryanActivity extends AppCompatActivity implements TabLayoutMediato
 
         ArrayList<Fragment> fragmentList = new ArrayList<>();
 
-        fragmentList.add(new HomeFragment());
+        fragmentList.add(new PasswordFragment());
         fragmentList.add(new DrawFragment());
         fragmentList.add(new CallFragment());
         fragmentList.add(new AnimateFragment());

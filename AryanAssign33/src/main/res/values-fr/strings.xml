@@ -2,7 +2,7 @@
 <!--N01393003-->
 <!--CENG 258 RNA-->
 <resources>
-    <string name="home_string">Maison</string>
+    <string name="home_string">le mot de passe</string>
     <string name="draw">Dessiner</string>
     <string name="call">Appel</string>
     <string name="animate">Animer</string>
@@ -21,7 +21,7 @@
     <string name="blue">Bleu</string>
     <string name="red">rouge</string>
     <string name="gray">Gris</string>
-    <string name="_1">1</string>
+    <string name="_1">1</string>0
     <string name="_2">2</string>
     <string name="_3">3</string>
     <string name="clear">Dégager</string>

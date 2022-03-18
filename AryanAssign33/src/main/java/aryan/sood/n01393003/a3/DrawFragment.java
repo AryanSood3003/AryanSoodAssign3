@@ -46,6 +46,7 @@ public class DrawFragment extends Fragment {
         String penSize = (String)((TextView)size.getSelectedView()).getText();
         String penColor = (String)((TextView)color.getSelectedView()).getText();
         customCanvas.updateCanvas(penSize,penColor);
+        customCanvas.invalidate();
     }
     @Override
     public void onCreate(Bundle savedInstanceState) {

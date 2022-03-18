@@ -2,7 +2,14 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:shareInterpolator="false"
     >
-
+    <rotate
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="360"
+        android:duration="5000"
+        android:repeatCount="infinite"
+        android:repeatMode="restart"/>
 
     <translate
         android:toYDelta="50"
@@ -48,6 +55,5 @@
         android:duration="4000"
         android:startOffset="24000"
         />
-
 
 </set>

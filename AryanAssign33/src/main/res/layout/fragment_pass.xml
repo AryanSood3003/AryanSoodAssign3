@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="@color/red"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".PasswordFragment">
 
     <TextView
         android:id="@+id/Aryan_textView"

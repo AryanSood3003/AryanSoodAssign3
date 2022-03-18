@@ -17,11 +17,9 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 public class CanvasView extends View {
-    private static final float TOLERANCE = 5;
-    public int width;
-    public int height;
+    private static final float max = 5;
     Context context;
-    private Bitmap mBitmap;
+    private Bitmap bmap;
     private Canvas mCanvas;
     private Path mPath;
     private Paint mPaint;
@@ -45,10 +43,9 @@ public class CanvasView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-
         // your Canvas will draw onto the defined Bitmap
-        mBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-        mCanvas = new Canvas(mBitmap);
+       bmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+        mCanvas = new Canvas(bmap);
     }
 
     // override onDraw
@@ -75,7 +72,7 @@ public class CanvasView extends View {
     private void moveTouch(float x, float y) {
         float dx = Math.abs(x - mX);
         float dy = Math.abs(y - mY);
-        if (dx >= TOLERANCE || dy >= TOLERANCE) {
+        if (dx >= max || dy >= max) {
             mPath.quadTo(mX, mY, (x + mX) / 2, (y + mY) / 2);
             mX = x;
             mY = y;
