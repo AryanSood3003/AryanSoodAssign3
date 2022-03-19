@@ -23,8 +23,6 @@ import androidx.lifecycle.ViewModelProvider;
  * create an instance of this fragment.
  */
 public class DrawFragment extends Fragment {
-    private static final String TAG ="2";
-    private PageViewModel pageViewModel;
     private View v;
     Button clear,update;
     Spinner size;
@@ -51,8 +49,6 @@ public class DrawFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        pageViewModel = new ViewModelProvider(this).get(PageViewModel.class);
-        pageViewModel.setIndex(TAG);
     }
 
     @Override
@@ -77,7 +73,6 @@ public class DrawFragment extends Fragment {
             }
         });
 
-        // Inflate the layout for this fragment
         return v;
     }
 }
