@@ -53,19 +53,13 @@ public class AnimateFragment extends Fragment {
         stopBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               pauseAnimation(R.anim.move);
+                imageView.clearAnimation();
             }
         });
 
         return view;
     }
 
-    private void pauseAnimation(int animationResourseID) {
-        imageView.setVisibility(View.VISIBLE);
-        Animation an = AnimationUtils.loadAnimation(getContext(), animationResourseID);
-        an.setAnimationListener(new MyAnimationListener());
-        imageView.startAnimation(an);
-    }
 
     public void performAnimation(int animationResourseID){
         imageView.setVisibility(View.VISIBLE);

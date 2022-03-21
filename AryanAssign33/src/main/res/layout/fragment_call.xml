@@ -26,9 +26,7 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="36dp"
         android:text="@string/assignment_3"
-        android:textSize="25sp"
-        android:textStyle="bold|italic"
-        android:typeface="serif"
+        style="@style/tab3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

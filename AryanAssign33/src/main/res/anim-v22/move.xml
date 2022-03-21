@@ -31,6 +31,7 @@
         android:fillAfter="true"
         android:duration="1000"
         android:startOffset="13000"
+
         />
 
     <translate
